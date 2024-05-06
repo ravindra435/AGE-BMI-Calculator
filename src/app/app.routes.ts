@@ -14,6 +14,11 @@ export const routes: Routes = [
     component: DashboardComponent,
     children: [
       {
+        path: '',
+        redirectTo: 'age',
+        pathMatch: 'full',
+      },
+      {
         path: 'age',
         component: AgeCalculatorComponent,
       },
